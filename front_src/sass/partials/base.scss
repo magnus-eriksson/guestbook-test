@@ -1,0 +1,71 @@
+/*
+ * INIT
+ * --------------------------------------
+ */
+
+@-ms-viewport {
+    width: device-width;
+}
+
+* {
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+*:before, *:after {
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+}
+
+body {
+    background-color: $bg-color;
+    font: $font;
+    color: $font-color;
+    margin: 0;
+    padding: 0;
+
+    &.lock {
+        overflow-y: hidden;
+    }
+}
+
+form {
+    border: 0;
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    color: $link-color;
+    text-decoration: none;
+
+    &:hover {
+        text-decoration: underline;
+    }
+}
+
+h1 {
+    font-weight: 400;
+    margin: 0 0 40px 0;
+}
+
+#wrapper {
+    position: relative;
+    max-width: $site-width;
+    margin: 0 auto;
+    padding: 0 $gutter 30px $gutter;
+}
+
+.error {
+    margin-bottom: 15px;
+    color: #c00;
+}
+
+#info {
+    padding: 10px;
+    background-color: #f8f8f8;
+    border: solid 1px #ddd;
+    text-align: center;
+}

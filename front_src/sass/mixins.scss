@@ -1,0 +1,34 @@
+@mixin cleanList {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+
+    li {
+        margin: 0;
+        padding: 0;
+    }
+}
+
+@mixin inlineList {
+    display: flex;
+    flex-wrap: wrap;
+
+    li.right {
+        margin-left: auto;
+    }
+}
+
+@mixin anim($target: all, $speed:0.3s, $delay: 0s) {
+    -webkit-transition: $target $speed ease-in-out;
+    -moz-transition: $target $speed ease-in-out;
+    -ms-transition: $target $speed ease-in-out;
+    -o-transition: $target $speed ease-in-out;
+    transition: $target $speed ease-in-out;
+}
+
+@mixin placeholder {
+    &::-webkit-input-placeholder {@content}
+    &:-moz-placeholder           {@content}
+    &::-moz-placeholder          {@content}
+    &:-ms-input-placeholder      {@content}
+}

@@ -1,0 +1,76 @@
+.form-item {
+    position: relative;
+    margin: 0 0 20px 0;
+}
+
+.form-group {
+    position: relative;
+    display: flex;
+    margin: 0;
+
+    .form-item {
+        flex-grow: 1;
+        max-width: 50%;
+        padding: 0 10px;
+
+        &:first-child {
+            padding-left: 0;
+        }
+
+        &:last-child {
+            padding-right: 0;
+        }
+    }
+}
+
+button, input[type="submit"], .btn {
+    display: inline-block;
+    border: 0;
+    margin: 0;
+    padding: 6px 14px;
+    font-size: 14px;
+    font-weight: normal;
+    font-family: inherit;
+    color: #fff;
+    background-color: #333;
+    border-radius: 2px;
+}
+
+label {
+    display: block;
+    font-size: 11px;
+    font-weight: 700;
+    color: #222;
+    margin-bottom: 5px;
+    text-transform: uppercase;
+}
+
+input[type="text"], input[type="password"], select, textarea {
+    border: solid 1px #ccc;
+    background-color: #fff;
+    margin: 0;
+    padding: 6px;
+    font-size: 15px;
+    font-family: inherit;
+    width: 100%;
+    outline: none;
+
+    @include placeholder {
+        font-size: inherit;
+        color: #ccc;
+    }
+}
+
+select {
+    padding: 4px 6px;
+}
+
+textarea {
+    padding: 6px;
+    min-height: 200px;
+    border: solid 1px #ccc;
+
+    &:focus {
+        border-color: #ccc;
+    }
+}
