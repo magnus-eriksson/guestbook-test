@@ -26,6 +26,7 @@ Make sure all requests are sent to the `index.php`-file. Don't forget to pass th
 
 ### Front end
 
-The front end is built with gulp and all source files can be found in `front_src/`. However, the generated files are included so no need to build anything. I'm just using gulp so I can structure the js-code easier and use sass.
+The front end is built with gulp and all source files can be found in `front_src/`. However, the generated files are included so no need to build anything. I'm just using gulp so I can structure the js-code easier and use sass. Everything is just vanilla js without any libs.
 
-Have fund!
+
+Have fun!
